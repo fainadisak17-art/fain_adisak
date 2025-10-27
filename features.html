@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ฟีเจอร์ | เว็บไซต์ของฉัน</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="index.html">
+        <div class="logo">A</div>
+        <div><div style="font-weight:700">เว็บไซต์ของฉัน</div><div style="font-size:12px;color:var(--muted)">สร้างด้วย HTML + CSS</div></div>
+      </a>
+      <nav>
+        <a href="features.html" class="active">ฟีเจอร์</a>
+        <a href="pricing.html">ราคา</a>
+        <a href="contact.html">ติดต่อ</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>ฟีเจอร์เด่น</h2>
+        <div class="features">
+          <div class="feature"><h3>ตอบสนอง (Responsive)</h3><p>ดูสวยบนมือถือ แท็บเล็ต และเดสก์ท็อป</p></div>
+          <div class="feature"><h3>ธีมสีปรับได้</h3><p>เปลี่ยนค่าสีใน :root เพื่อเข้ากับแบรนด์</p></div>
+          <div class="feature"><h3>เบาและเร็ว</h3><p>โหลดไว ไม่ต้องพึ่งเฟรมเวิร์ก</p></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>© <span id="year"></span> เว็บไซต์ของฉัน</div>
+      <div class="muted">สร้างด้วย ❤️ — ปรับแต่งได้เต็มที่</div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
