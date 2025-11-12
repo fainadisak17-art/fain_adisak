@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เว็บไซต์ของผม</title>
+<style>
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#06b6d4;
+  --glass: rgba(255,255,255,0.04);
+  --radius:12px;
+  --maxw:1100px;
+  --gap:20px;
+  color-scheme: dark;
+  color: #e6eef6;
+  font-size:18px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg), #071027 120%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  padding:40px 16px;
+  display:flex;
+  justify-content:center;
+}
+.container{width:100%;max-width:var(--maxw);margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:var(--gap);margin-bottom:28px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:grid;place-items:center;font-weight:700;color:#021026}
+nav{display:flex;gap:12px;align-items:center}
+nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:10px}
+nav a:hover,nav a.active{color:var(--accent);background:var(--glass)}
+.hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:var(--radius);padding:32px;display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center}
+.eyebrow{color:var(--muted);font-size:13px;margin-bottom:8px}
+h1{margin:0;font-size:28px}
+p.lead{margin:12px 0 20px;color:var(--muted)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021026}
+.btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--muted);background:transparent}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.feature{
+  padding:16px;
+  border-radius:10px;
+  background:var(--card);
+  border:2px solid white;
+  box-shadow:0 0 10px rgba(255,255,255,0.1);
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+.feature:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 15px rgba(255,255,255,0.2);
+}
+.feature h4{margin:0 0 8px}
+.feature p{margin:0;color:var(--muted);font-size:18px}
+.link-btn{
+  display:inline-block;
+  margin-top:8px;
+  padding:8px 14px;
+  background:linear-gradient(90deg,var(--accent),#7c3aed);
+  border-radius:8px;
+  color:#021026;
+  text-decoration:none;
+  font-weight:600;
+  transition:opacity 0.2s;
+}
+.link-btn:hover{opacity:0.85;}
+footer{margin-top:28px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;align-items:center}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .features{grid-template-columns:repeat(2,1fr)}
+  header{flex-direction:column;align-items:flex-start}
+  nav{order:2}
+}
+@media (max-width:560px){
+  .features{grid-template-columns:1fr}
+  .logo{width:40px;height:40px}
+  h1{font-size:22px}
+}
+.muted{color:var(--muted)}
+.center{display:grid;place-items:center}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="brand">
+        <div class="logo">AN</div>
+        <span>Adisak Portfolio</span>
+      </a>
+      <nav>
+        <a href="index.html" class="active">หน้าแรก</a>
+        <a href="about.html" class="active">เกี่ยวกับ</a>
+        <a href="education.html" class="active">ศึกษา</a>
+        <a href="work.html" class="active">ประวัติทำงาน</a>
+        <a href="#" class="active">ติดต่อ</a>
+      </nav>
+    </header>
+ 
+    <h2>ช่องทางการติดต่อ</h2>
+     <p>&nbsp;&nbsp;คุณสามารถติดต่อฉันได้ตามช่องทางด้านล่างนี้😊<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬇⬇⬇</p>
+    
+    <section class="features">
+      <div class="feature">
+        <ul class="contact-info">
+            <p><strong>อีเมล&nbsp;:&nbsp;</strong> <a href="mailto:fain.adisak17@gmail.com">fain.adisak17@gmail.com</a></p>
+            <p><strong>โทรศัพท์&nbsp;:&nbsp;</strong> <a href="tel:0910507714">091-050-7714</a></p>
+            <p><strong>Instagram&nbsp;:&nbsp;</strong> <a href="https://www.instagram.com/xdi.sakdi_03" target="_blank">@xdi.sakdi_03</a></p>
+            <p><strong>Facebook&nbsp;:&nbsp;</strong> <a href="https://www.facebook.com/share/1A4B9XgHLC/" target="_blank">อดิศักดิ์ ฯ.</a></p>
+            <p><strong>ที่อยู่&nbsp;:&nbsp;</strong> แมนชั่น ตึก 2, 264/3-4 ซอย รามคำแหง 65, แขวงพลับพลา, เขตวังทองหลาง, กรุงเทพมหานคร 10310</p>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2025 Adisak Namtawee</span>
+      <span>สร้างด้วย ❤️ และ HTML + CSS</span>
+    </footer>
+  </div>
+</body>
+</html>
+
+
